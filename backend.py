@@ -1,6 +1,11 @@
 from langgraph.graph import StateGraph, START, END
 from typing import TypedDict, Literal, Annotated
-from langchain_openai import ChatOpenAI
+# from langchain_openai import ChatOpenAI
+try:
+    from langchain_openai import ChatOpenAI
+except ImportError:
+    from langchain.chat_models import ChatOpenAI
+
 from langchain.schema import SystemMessage, HumanMessage, BaseMessage
 from dotenv import load_dotenv
 import os
