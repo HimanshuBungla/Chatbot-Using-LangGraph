@@ -1,5 +1,7 @@
 streamlit
-langchain
-openai
-python-dotenv
 langgraph
+langchain
+langchain-openai
+python-dotenv
+pydantic
+sqlite3-binary
