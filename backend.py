@@ -15,7 +15,7 @@ import os
 from pydantic import BaseModel, Field
 import operator
 from langgraph.graph.message import add_messages #more optmized to work with BaseMessages
-from langgraph.checkpoint.sqlite import SqliteSaver #Kind of memory in LangGraph that stores things in database
+from langgraph.checkpoint import SqliteSaver #Kind of memory in LangGraph that stores things in database
 import sqlite3
 import streamlit as st
 
