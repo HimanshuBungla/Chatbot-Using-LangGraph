@@ -17,8 +17,8 @@ load_dotenv()
 llm = ChatOpenAI(
     model="meta-llama/llama-3-8b-instruct",
     temperature=0.7,
-    openai_api_key=os.getenv("OPENAI_API_KEY"),
-    openai_api_base=os.getenv("OPENAI_API_BASE")
+    openai_api_key=os.getenv("OPENAI_API_KEY", st.secrets["OPENAI_API_KEY"]),
+    openai_api_base=os.getenv("OPENAI_API_BASE",st.secrets["OPENAI_API_BASE"])
 )
 
 class ChatState(TypedDict):
