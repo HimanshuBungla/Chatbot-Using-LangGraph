@@ -4,7 +4,10 @@ from typing import TypedDict, Literal, Annotated
 try:
     from langchain_openai import ChatOpenAI
 except ImportError:
-    from langchain.chat_models import ChatOpenAI
+    try:
+        from langchain.chat_models import ChatOpenAI
+    except ImportError:
+        from langchain_community.chat_models import ChatOpenAI
 
 from langchain.schema import SystemMessage, HumanMessage, BaseMessage
 from dotenv import load_dotenv
