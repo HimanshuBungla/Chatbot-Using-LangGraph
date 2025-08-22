@@ -133,7 +133,7 @@ View traces for each thread: latency, tokens, and metadata
 Debug conversation flow visually
 ```
 
-##Project Structure
+## Project Structure
 
 ```bash
 langgraph-chatbot/
