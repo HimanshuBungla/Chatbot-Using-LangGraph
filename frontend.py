@@ -154,7 +154,11 @@ if user_input:
     with st.chat_message("user"):
         st.text(user_input)
 
-    CONFIG = {'configurable': {'thread_id': st.session_state['thread_id']}}
+    # CONFIG = {'configurable': {'thread_id': st.session_state['thread_id']}}
+    CONFIG = {'configurable': {'thread_id': st.session_state['thread_id']},
+              'metadata': {'thread_id': [st.session_state['thread_id']]},
+              'run_name': "git-chat_turn"
+    }
     response = chatbot.stream(
         {'messages': [HumanMessage(content=user_input)]}, 
         config=CONFIG,
