@@ -118,6 +118,8 @@ LANGCHAIN_PROJECT=langgraph-chatbot
 ```bash
 streamlit run app.py
 
+---
+
 2. Open the provided local URL (e.g., http://localhost:8501) in your browser.
 
 3. Sidebar options:
