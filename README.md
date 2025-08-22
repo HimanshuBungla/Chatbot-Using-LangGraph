@@ -95,7 +95,6 @@ This section explains each library/module used in the project and why it was cho
 ```bash
 git clone https://github.com/yourusername/langgraph-chatbot.git
 cd langgraph-chatbot
-
 2. Create a virtual environment:
 python -m venv venv
 source venv/bin/activate   # Linux/macOS
@@ -110,15 +109,13 @@ OPENAI_API_BASE=https://api.openai.com/v1
 LANGCHAIN_TRACING_V2=true
 LANGCHAIN_API_KEY=your_langsmith_api_key_here
 LANGCHAIN_PROJECT=langgraph-chatbot
-
+```
 
 ## Usage
 
 1. Run the Streamlit app:
 ```bash
 streamlit run app.py
-
----
 
 2. Open the provided local URL (e.g., http://localhost:8501) in your browser.
 
@@ -133,6 +130,7 @@ Delete threads
 Open LangSmith
 View traces for each thread: latency, tokens, and metadata
 Debug conversation flow visually
+```
 
 ##Project Structure
 
@@ -145,3 +143,4 @@ langgraph-chatbot/
 ├── chatbot.db          # SQLite database for storing conversation states
 ├── .env                # Environment variables
 └── README.md           # Project documentation
+```
