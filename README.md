@@ -90,9 +90,9 @@ This section explains each library/module used in the project and why it was cho
 
 ## Installation
 
+```bash
 1. Clone the repository:
 
-```bash
 git clone https://github.com/yourusername/langgraph-chatbot.git
 cd langgraph-chatbot
 2. Create a virtual environment:
@@ -113,8 +113,9 @@ LANGCHAIN_PROJECT=langgraph-chatbot
 
 ## Usage
 
-1. Run the Streamlit app:
 ```bash
+1. Run the Streamlit app:
+
 streamlit run app.py
 
 2. Open the provided local URL (e.g., http://localhost:8501) in your browser.
