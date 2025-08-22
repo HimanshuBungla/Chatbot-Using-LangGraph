@@ -93,7 +93,7 @@ This section explains each library/module used in the project and why it was cho
 ```bash
 1. Clone the repository:
 
-git clone https://github.com/yourusername/langgraph-chatbot.git
+git clone https://github.com/HimanshuBungla/Chatbot-Using-LangGraph
 cd langgraph-chatbot
 2. Create a virtual environment:
 python -m venv venv
